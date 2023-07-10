@@ -1,0 +1,11 @@
+.idea/
+*.iml
+node_modules/
+HELP.json
+HELP.md
+
+1-har-exported/*
+2-har-filtered/*
+3-postman-collections/*
+4-k6-scripts/*
+!**/.gitkeep

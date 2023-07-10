@@ -1,0 +1,20 @@
+{
+  "name": "postman-k6-api-load-testing",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "echo Read the README.md for the usage description.",
+    "2": "node har-filter.js",
+    "har-filter": "node har-filter.js",
+    "4": "node postman-to-k6.js",
+    "postman-to-k6": "node postman-to-k6.js",
+    "5": "node k6-commands.js",
+    "k6-commands": "node k6-commands.js"
+  },
+  "dependencies": {
+    "jsonpath": "^1.1.1",
+    "k6": "^0.0.0"
+  },
+  "devDependencies": {
+    "@apideck/postman-to-k6": "^1.8.8"
+  }
+}
