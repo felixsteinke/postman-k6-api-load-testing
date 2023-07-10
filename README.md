@@ -1,10 +1,12 @@
 # API Load Testing
 
-This repository gives the opportunity for quick API load testing.
+This repository gives the opportunity for quick API load testing. It lets you record a usage scenario in the browser to
+then transform it to a __Postman Collection__ or a __K6 Load Test__.
 
 ## Installation
 
-> Prerequisite: Installed [NodeJS](https://nodejs.org/en/download) and [Postman](https://www.postman.com/downloads/)
+> Prerequisite: Installed [NodeJS](https://nodejs.org/en/download), [Postman](https://www.postman.com/downloads/) 
+> and [K6](https://k6.io/docs/get-started/installation/)
 
 ```shell
 npm install
@@ -21,6 +23,8 @@ npm install
 5. Execute the interested usage scenario.
 6. Export the __HAR file__ from the __Dev Tools__ and save it to [1-har-exported](1-har-exported).
 
+![Chrome Dev Tools](.docs/chrome-dev-tools.png)
+
 ### 2. Filter HAR
 
 Filter the __HAR file__ for only the `XHR` requests and save them to [2-har-filtered](2-har-filtered).
@@ -33,16 +37,19 @@ npm run har-filter
 
 1. Open __Postman__.
 2. Import the __HAR file__ from [2-har-filtered](2-har-filtered) as __Postman Collection__.
-3. Modify the collection if needed.
+3. Modify the collection like the authentication.
 4. Export the __Postman Collection__ as `json` to the [3-postman-collections](3-postman-collections).
 
 ### 4. Postman to K6
 
-Transform the __Postman Collections__ to __K6 Scripts__ and save them to [4-k6-scripts](4-k6-scripts).
+Transform the __Postman Collections__ to __K6 Scripts__ and save them to [4-k6-scripts](4-k6-scripts). Get all required
+commands:
 
 ```shell
 npm run postman-to-k6
 ```
+
+And execute them all.
 
 ### 5. Execute K6 Load Tests
 
