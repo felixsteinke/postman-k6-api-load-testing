@@ -20,6 +20,8 @@ fs.readdir(scriptDirectory, (err, files) => {
     });
     // print options
     if (files.length > 0) {
-        console.log("Options: --vus=2")
+        console.log("Options: (run options script)")
+        console.log("--vus 4")
+        console.log("--duration 30s")
     }
 }); // read the directory
