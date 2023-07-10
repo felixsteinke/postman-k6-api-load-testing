@@ -63,4 +63,5 @@ And execute them as desired.
 
 ## References
 
+* [Running K6](https://k6.io/docs/get-started/running-k6/)
 * [Postman to K6 GitHub](https://github.com/apideck-libraries/postman-to-k6)
