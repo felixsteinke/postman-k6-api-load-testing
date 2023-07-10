@@ -60,3 +60,7 @@ npm run k6-commands
 ```
 
 And execute them as desired.
+
+## References
+
+* [Postman to K6 GitHub](https://github.com/apideck-libraries/postman-to-k6)
